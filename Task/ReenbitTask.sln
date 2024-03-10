@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReenbitTask", "ReenbitTask.csproj", "{96129676-81CC-4D53-8989-5127EDDC166A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task.Tests", "..\Task.Tests\Task.Tests.csproj", "{F05AC7C6-7F0D-48E3-94DE-F1A09E9176E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96129676-81CC-4D53-8989-5127EDDC166A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96129676-81CC-4D53-8989-5127EDDC166A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96129676-81CC-4D53-8989-5127EDDC166A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96129676-81CC-4D53-8989-5127EDDC166A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F05AC7C6-7F0D-48E3-94DE-F1A09E9176E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F05AC7C6-7F0D-48E3-94DE-F1A09E9176E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F05AC7C6-7F0D-48E3-94DE-F1A09E9176E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F05AC7C6-7F0D-48E3-94DE-F1A09E9176E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B7AE24F9-0C29-4AB8-8FD6-8AE791500EBE}
+	EndGlobalSection
+EndGlobal
