@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ReenbitTask.Dto;
+using ReenbitTask.Services;
 
 namespace ReenbitTask.Controllers
 {

@@ -1,4 +1,6 @@
-﻿namespace ReenbitTask.Dto
+﻿using ReenbitTask.Dto;
+
+namespace ReenbitTask.Services
 {
     public interface IFileService
     {

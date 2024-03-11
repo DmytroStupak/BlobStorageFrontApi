@@ -1,7 +1,8 @@
 ﻿using Azure.Storage;
 using Azure.Storage.Blobs;
+using ReenbitTask.Dto;
 
-namespace ReenbitTask.Dto
+namespace ReenbitTask.Services
 {
     public class FileService : IFileService
     {
@@ -13,7 +14,7 @@ namespace ReenbitTask.Dto
         {
             var credential = new StorageSharedKeyCredential(_storageAccount, _key);
             var blobUri = $"https://{_storageAccount}.blob.core.windows.net";
-            var blobServiceClient = new BlobServiceClient(new Uri(blobUri),credential);
+            var blobServiceClient = new BlobServiceClient(new Uri(blobUri), credential);
             _filesContainer = blobServiceClient.GetBlobContainerClient($"{Const.CONTAINER}");
         }
 
@@ -22,9 +23,9 @@ namespace ReenbitTask.Dto
             BlobResponseDto response = new();
             BlobClient client = _filesContainer.GetBlobClient(blob.FileName);
 
-            await using (Stream? data = blob.OpenReadStream()) 
+            await using (Stream? data = blob.OpenReadStream())
             {
-                await client.UploadAsync(data,true);
+                await client.UploadAsync(data, true);
             }
 
             response.Status = $"File \"{blob.FileName}\" Uploaded Successfully";
